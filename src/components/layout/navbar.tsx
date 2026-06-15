@@ -25,7 +25,7 @@ export function Navbar() {
               height={96}
               priority
               unoptimized
-              className="size-12 scale-[2.45] object-contain [backface-visibility:hidden]"
+              className="size-12 scale-[2.45] object-contain backface-hidden"
             />
           </span>
           <span className="grid gap-0.5 leading-none">
