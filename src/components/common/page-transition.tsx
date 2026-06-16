@@ -15,8 +15,8 @@ export function PageTransition({ children, className }: PageTransitionProps) {
   return (
     <motion.div
       className={cn("min-w-0", className)}
-      initial={shouldReduceMotion ? false : { opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={false}
+      animate={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
     >
       {children}
